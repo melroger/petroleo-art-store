@@ -1,0 +1,5 @@
+.itemList { display: flex; flex-wrap: wrap; gap: 25px; padding-bottom: 100px; }
+.itemList .wrapperCard { padding: 25px; position: relative; width: calc(100%/3 - 18px) }
+
+
+

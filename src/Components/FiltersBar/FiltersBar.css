@@ -1,0 +1,6 @@
+
+.filtersBar{ position: relative; } 
+.filtersBar ul{ display: flex; align-items: center; } 
+.filtersBar li a { text-transform: uppercase; height: 60px; display: flex; align-items: center; padding: 0 25px; color: #FFF; font-size: 13px; }
+.filtersBar li a:hover {  }
+.filtersBar li a.active {  }
