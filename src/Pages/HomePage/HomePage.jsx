@@ -13,15 +13,15 @@ const HomePage = () => {
       <section className='hero'>
         <div className='wrapper'>
           <div className='hero-text'>
-            <HeroText greeting= {"Diseños en Blanco y Negro - - - > los colores son las connotaciones de nuestra subjetividad al apreciarlos."}/>
             <img className='chair-hero'  src={img} />
+            <HeroText greeting= {"Los colores son las connotaciones de nuestra subjetividad al apreciarlos."}/>
           </div>
           <img className='hero-logo' src={herologo} />
         </div>
         <Video />
       </section>
 
-      <section>
+      <section className="home-section">
         <div className='wrapper'>
           <h2>Lorem ipsum dolor sit amet, consectetuer </h2>
         </div>

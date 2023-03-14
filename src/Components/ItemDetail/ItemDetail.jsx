@@ -2,26 +2,37 @@ import ItemCount from "./ItemCount/ItemCount";
 import placeholder from "../../assets/img/placeholder.svg";
 import "./ItemDetail.css";
 
+
 const ItemDetail = ({detail}) => {
   return (
     <div className="itemDetail">
-      <figure>
-        <img src={placeholder} alt={detail.name} />
-      </figure>
-      <div className='textWrapper'>
-            <ul className='textWrapper'>
-                <li><h3>{detail.name}</h3></li>
-                <li>Descripcion:<span>{detail.description}</span></li>
-                <li>Material:<span>{detail.material}</span></li>
-                <li>Medidas:<span>{detail.measure}</span></li>
-                <li>Autor:<span>{detail.autor}</span></li>
-            </ul>
-            <div className="cardItemFooter">
-              {detail.category}
-              <span>${detail.price}</span>
-            </div>
-            {/* <ItemCount /> */}
-            <button className='addCart'>comprar</button>
+      <div className="wrapper">
+        <figure>
+          <img src={`${detail.image}`} alt={detail.nombre} />
+        </figure>
+        <div className='textWrapper'>
+              <ul>
+                  <li><h3>{detail.nombre}</h3></li>
+                  <li><span className="description">{detail.descripcion}</span></li>
+                  <li><p>Material:<span>{detail.material}</span></p></li>
+                  <li><p>Medidas:<span>{detail.medidas}</span></p></li>
+                  <li><p>Autor:<span>{detail.autor}</span></p></li>
+              </ul>
+              <div className="cardItemFooter">
+                {detail.categoria}
+                <span>${detail.precio}</span>
+              </div>
+              {/* <ItemCount /> */}
+              <div className="buy-container">
+                <div className="counter-container">
+                  <div className="less">-</div>
+                  <div className="more">+</div>
+                  <div className="less">-</div>
+                </div>
+                <button className='addCart'>comprar</button>
+              </div>
+              
+        </div>        
       </div>
     </div>
   )

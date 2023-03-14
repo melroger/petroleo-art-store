@@ -15,19 +15,19 @@ export default function FiltersBar() {
                     <li>
                         <NavLink 
                             className={({isActive}) => isActive ? 'active' : 'inactive'}
-                            to='/category/cirugias'>Cirugías
+                            to='/category/asientos'>Asientos
                         </NavLink>
                     </li>
                     <li>
                         <NavLink 
                             className={({isActive}) => isActive ? 'active' : 'inactive'}
-                            to='/category/tratamientos'>Tratamientos
+                            to='/category/esculturas'>Esculturas
                         </NavLink>
                         </li>
                     <li>
                         <NavLink
                             className={({isActive}) => isActive ? 'active' : 'inactive'}
-                            to="/category/alimentacion">Alimentación
+                            to="/category/lamparas">Lamparas
                         </NavLink>
                     </li>
                 </ul>                 

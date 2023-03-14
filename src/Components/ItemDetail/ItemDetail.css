@@ -1,0 +1,24 @@
+.itemDetail .wrapper{ display: flex; align-items: center; }
+.itemDetail figure{ width: 500px; margin-right: 20px; }
+.itemDetail figure img{  }
+.itemDetail figure{ max-width: 500px; margin-right: 20px; }
+.itemDetail .textWrapper{ max-width: 500px; }
+.itemDetail .textWrapper h3{ font-size: 35px; font-weight: 600; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

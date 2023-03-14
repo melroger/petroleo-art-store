@@ -34,7 +34,8 @@ section {
 }
 
 body {
-	line-height: 1;
+	letter-spacing: 5.2px;
+    line-height: 2.4;
 }
 
 ol, 

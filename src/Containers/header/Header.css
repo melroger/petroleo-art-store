@@ -1,7 +1,7 @@
 /*Header*/
-header{ display: flex; background-color: black; color: #FFF; z-index: 9999; width: 100%; border-bottom: 0.5px solid #ffffff31; height: 60px; align-items: center; }
+header{ display: flex; background-color: black; color: #FFF; z-index: 9999; width: 100%; position: fixed; height: 60px; align-items: center; }
 header .wrapper{ display: flex; justify-content: end; align-items: center; padding: 0 30px; }
-header .logo{ font-family: 'Righteous', sans-serif; letter-spacing: -2px; margin-right: auto; font-size: 36px; color: #FFF; overflow: hidden; max-width: 22px; transition: all .3s; }
-header .logo:hover{ max-width: 194px; }
+header .logo{ font-family: 'Righteous', sans-serif;  margin-right: auto; font-size: 36px; color: #FFF; overflow: hidden; max-width: 22px; transition: all .5s; }
+header .logo:hover{ max-width: 354px; }
 header .logo a{ color: #FFF; }
 
