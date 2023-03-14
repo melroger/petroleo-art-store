@@ -21,7 +21,7 @@ export default function FiltersBar() {
                     <li>
                         <NavLink 
                             className={({isActive}) => isActive ? 'active' : 'inactive'}
-                            to='/category/esculturas'>Esculturas
+                            to='/category/escultura'>Esculturas
                         </NavLink>
                         </li>
                     <li>

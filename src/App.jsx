@@ -7,8 +7,7 @@ import ItemDetailsContainer from './Containers/ItemDetailsContainer';
 import Header from './Containers/header/Header';
 import HomePage from "./Pages/HomePage/HomePage"
 import CartPage from './Pages/CartPage/CartPage';
-import Collection from './collection';
-import Document from './Document';
+
 
 function App() {
   return (

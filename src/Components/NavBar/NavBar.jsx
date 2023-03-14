@@ -7,8 +7,9 @@ export default function NavBar() {
         <div className="navBar">
             <ul className="categories">
                 <li><NavLink to='/category/asientos'>asientos</NavLink></li>
-                <li><NavLink to='/category/esculturas'>esculturas</NavLink></li>
+                <li><NavLink to='/category/escultura'>esculturas</NavLink></li>
                 <li><NavLink to="/category/lamparas">lamparas</NavLink></li>
+                <li><NavLink to="/">catalogo</NavLink></li>
             </ul>
         </div>
     )

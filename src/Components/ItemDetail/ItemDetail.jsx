@@ -1,9 +1,10 @@
 import ItemCount from "./ItemCount/ItemCount";
-import placeholder from "../../assets/img/placeholder.svg";
 import "./ItemDetail.css";
+import { useState } from "react";
 
 
 const ItemDetail = ({detail}) => {
+  const [count, setCount] = useState(0);
   return (
     <div className="itemDetail">
       <div className="wrapper">
@@ -13,26 +14,24 @@ const ItemDetail = ({detail}) => {
         <div className='textWrapper'>
               <ul>
                   <li><h3>{detail.nombre}</h3></li>
-                  <li><span className="description">{detail.descripcion}</span></li>
-                  <li><p>Material:<span>{detail.material}</span></p></li>
-                  <li><p>Medidas:<span>{detail.medidas}</span></p></li>
-                  <li><p>Autor:<span>{detail.autor}</span></p></li>
+                  <li><p className="description">{detail.descripcion}</p></li>
+                  <li><p>Autor: <span>{detail.autor}</span></p></li>
+                  <li><p>Material: {detail.material} </p></li>
+                  <li><p>Medidas: {detail.medidas} </p></li>
+                  <li><p>Stock: {detail.stock} </p></li>
               </ul>
               <div className="cardItemFooter">
-                {detail.categoria}
-                <span>${detail.precio}</span>
-              </div>
-              {/* <ItemCount /> */}
-              <div className="buy-container">
-                <div className="counter-container">
-                  <div className="less">-</div>
-                  <div className="more">+</div>
-                  <div className="less">-</div>
-                </div>
-                <button className='addCart'>comprar</button>
+                <span className="tag">{detail.categoria}</span>
+                <span className="price">${detail.precio}</span>
               </div>
               
-        </div>        
+              <div className="buy-container">
+                <ItemCount count={count} setCount={setCount} />
+                <button className='addCart btn'>
+                  comprar
+                </button>
+              </div>
+        </div>  
       </div>
     </div>
   )
