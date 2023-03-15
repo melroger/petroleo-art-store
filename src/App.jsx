@@ -7,6 +7,7 @@ import ItemDetailsContainer from './Containers/ItemDetailsContainer';
 import Header from './Containers/header/Header';
 import HomePage from "./Pages/HomePage/HomePage"
 import CartPage from './Pages/CartPage/CartPage';
+import CartProvider from './context/CartProvider.js ';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <section className="content">
         
         <BrowserRouter>
+        <CartProvider>
           <Header />
           <Routes>
             
@@ -25,7 +27,7 @@ function App() {
             <Route path='*' element={<div><h1>Esta página no existe</h1></div>} />
 
           </Routes>
-
+          </CartProvider>
         </BrowserRouter>
 
       </section>

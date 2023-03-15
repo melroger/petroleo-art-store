@@ -1,10 +1,15 @@
 import ItemCount from "./ItemCount/ItemCount";
 import "./ItemDetail.css";
-import { useState } from "react";
-
+import { useNavigate } from "react-router-dom";
+import { useContext, useState } from "react";
+import { CartContext } from "../../context/CartContext";
 
 const ItemDetail = ({detail}) => {
-  const [count, setCount] = useState(0);
+  const navigate = useNavigate();
+  const { addItem } = useContext(CartContext);
+  const [count, setCount] = useState(1);
+
+
   return (
     <div className="itemDetail">
       <div className="wrapper">
@@ -27,10 +32,12 @@ const ItemDetail = ({detail}) => {
               
               <div className="buy-container">
                 <ItemCount count={count} setCount={setCount} />
-                <button className='addCart btn'>
+                <button className='addCart btn' onClick={() => addItem(detail, count)}>
                   comprar
                 </button>
               </div>
+              <button className="btn" onClick={() => navigate('/')}>Seguir comprando</button>
+              <button className="btn" onClick={() => navigate('/cart')}>Ir a carrito</button>
         </div>  
       </div>
     </div>

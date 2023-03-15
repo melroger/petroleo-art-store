@@ -4,7 +4,9 @@ import "./Header.css"
 import NavBar from "../../Components/NavBar/NavBar"
 import CartWidget from '../../Components/CartWidget/CartWidget';
 
+
 const Header = () => {
+
   return (
     <header>
       <div className='wrapper'>

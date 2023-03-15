@@ -1,6 +1,6 @@
 import { CartContext } from './CartContext';
 import { useState } from 'react';
-import { product } from '../data/products';
+
 
 const CartProvider = ({children}) => {
     const [cart, setCart] = useState([]);
@@ -20,12 +20,11 @@ const CartProvider = ({children}) => {
         } else {
             const product = {
                 id: item.id,
-                name: item.name,
-                description: item.description,
-                cost: item.cost,
-                date: item.date,
-                state: item.state,
-                category: item.category,
+                nombre: item.nombre,
+                descripcion: item.descripcion,
+                precio: item.precio,
+                autor: item.autor,
+                categoria: item.categoria,
                 quantity: quantity,
                 image: item.image,
             };
